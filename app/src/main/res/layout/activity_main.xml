@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter your height"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="3dp"/>
+
+
+
+    <EditText
+        android:id="@+id/height_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="height goes here"
+        android:textColorHint="@color/purple_200"
+        android:textAlignment="center"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter your weight"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="3dp" />
+
+    <EditText
+        android:id="@+id/weight_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="weight goes here"
+        android:textColorHint="@color/purple_200"
+        android:textAlignment="center"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:onClick="calculateButtonClick"
+        android:id="@+id/calculate_button_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
